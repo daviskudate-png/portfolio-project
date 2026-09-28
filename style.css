@@ -1,72 +1,124 @@
+
+* {
+  box-sizing: border-box;  
+}
+body {
+  margin: 0;                  
+  font-family: Arial, sans-serif;    
+  line-height: 1.6;                 
+  color: #222;                   
+  background-color: #f4f6f8;         
+}
+html {
+  scroll-behavior: smooth;       
+}
 .navi {
-    background-color: bisque;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
-    width: 100%;
+  background-color: #1f3a5f;         
+  position: sticky;                 
+  top: 0;
+}
+.navi ul {
+  list-style: none;              
+  margin: 0;
+  padding: 15px;
+  display: flex;                    
+  justify-content: center;           
+  gap: 25px;                         
+}
+.navi a {
+  color: white;
+  text-decoration: none;        
+  font-weight: bold;
+}
+.navi a:hover {
+  color: #ffd166;         
+}
+main {
+  max-width: 800px;           
+  margin: 0 auto;            
+  padding: 20px;
+}
+#home {
+  text-align: center;
+  padding: 40px 0;
 }
 #home img {
-    width: 300px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-top: 100px;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;        
+  border-radius: 50%;         
+  border: 5px solid #1f3a5f;
 }
 #home h1 {
-    font-weight: 600;
-    font-size: 30px;
-    margin-bottom: 10px;
+  font-size: 2.5rem;
+  color: #1f3a5f;
+  margin: 15px 0 10px;
 }
-#home p {
-    font-size: 1.2em;
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.4;
+#about-me,
+#projects,
+#contact-me {
+  background-color: #ffffff;
+  padding: 25px;
+  margin-bottom: 25px;
+  border-radius: 8px;         
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);  
 }
-#about-me h2 {
-    font-weight: 600;
+h2 {
+  color: #1f3a5f;
+  margin-top: 0;
 }
-#about-me p {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    line-height: 1.6;
+#projects img {
+  width: 100%;             
+  height: 220px;
+  object-fit: cover;
+  border-radius: 6px;
 }
-#projects {
-    width: 500px;
-    background-color: white;
-    border: 2px burlywood
-    border-radius: 20px;
+[id="form-group"] {
+  margin-bottom: 15px;
 }
-    #projects img {
-        width: 100%;
-        height: 350px;
-        object-fit: cover;
-        display: block;
-    }
-#projects h2 {
-    margin-bottom: 10px;
-    font-size: 28px;
-    color: #222;
-    padding-top: 0;
+label {
+  display: block;                  
+  font-weight: bold;
+  margin-bottom: 5px;
 }
-#project p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin: 0;
-    margin-top: 0;
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
 }
-#form-group {
-    display: flex;
-    align-items: flex-end;
-    gap: 16px;
-    flex-wrap: wrap;
+input:focus {
+  outline: none;
+  border-color: #1f3a5f;  
 }
-#contact-me button {
-    color: aqua;
+button {
+  background-color: #1f3a5f;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;           
+}
+button:hover {
+  background-color: #2f5a94;     
 }
 .foot {
-    background-color: bisque;
-    text-align: center;
-    margin-top: 3em;
+  background-color: #1f3a5f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.foot a {
+  color: #ffd166;
+}
+  .navi ul {
+    flex-wrap: wrap;        
+    gap: 15px;
+  }
 
+  #home h1 {
+    font-size: 2rem;
+  }
 }
